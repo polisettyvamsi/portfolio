@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" 
+          rel="stylesheet">
+    <title>Portfolioweb</title>
+  </head>
+  <body>
+  
+    <header class="header container">
+       <nav>
+          <ul class="header__menu">
+             <li>
+                <a class="header__link" href="#about">About</a>
+             </li>
+             <li>
+                <a class="header__link" href="#featured">Work</a>
+             </li>
+             <li>
+                <a class="header__link" href="#contack">Contack</a>
+             </li>
+             <li class="header__line"></li>
+             <li>
+               <button id="theme-toggle" class="header__sun">
+                  <svg xmlns="http://www.w3.org/2000/svg" 
+                        viewBox="0 0 24 24"
+                         fill="currentColor" 
+                        >
+                     <path d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1
+                      .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 
+                      0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 
+                      0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 
+                      1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75
+                       0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75
+                        0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
+                   </svg> 
+               </button>
+             </li>
+             <li class="header__resume btn">resume</li>
+          </ul>
+          <button class="header_bars">
+            <svg xmlns="http://www.w3.org/2000/svg" 
+                  viewBox="0 0 24 24"
+                   fill="currentColor" 
+                   >
+               <path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 
+                     6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3
+                      12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 
+                      0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 
+                      1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+             </svg>
+          </button>
+       </nav>
+      </header>
+      <!-- Mobile Navigation -->
+         <div class="mobile-nav">
+            <nav>
+               <ul class="mobile-nav__menu">
+                  <li>
+                        <a class="mobile-nav__link " href="#about">About</a>
+                  </li>
+                  <li>
+                        <a class="mobile-nav__link " href="#featured">Work</a>
+                  </li>
+                  <li>
+                        <a class="mobile-nav__link " href="#contack">Contact</a>
+                  </li>
+
+                  <li class="mobile-nav__link-line"></li>
+                
+                  <li>
+                     <button id="theme-toggle" class="mobile-nav__sun">
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                              viewBox="0 0 24 24"
+                               fill="currentColor" 
+                              >
+                           <path d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1
+                            .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 
+                            0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 
+                            0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 
+                            1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75
+                             0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75
+                              0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
+                         </svg> 
+                     </button>
+                  </li>
+                  <li>
+                        <a class="mobile-nav__btn btn" href="#">Resume</a>
+                  </li>
+               </ul>
+            </nav>
+         </div>
+      <!-- End of mobile navigation -->
+    <main>
+        <section class="hero container" >
+            <img class="hero__img" src="/p7.jpeg" alt="Profile Picture"/>
+            <h2 class="hero__subtitle">Hi, I'm vamsip 👋</h2>
+            <h1 class="hero__title">
+               FRONT-END <br />
+               WEB DEVELOPER.
+            </h1>
+            <p class="hero__description">
+               A passionate <strong>Frontend / Fullstack-Jamstack</strong> web
+               developer and <strong>UI/UX</strong>
+               enthusiast specialized in building stunning pixel-perfect interactive
+               websites/applications.
+            </p>
+            <a class="hero__btn btn" href="#">Reach out</a>
+        </section>
+        <section  id="about" class="about container section">
+            <div class="about__content">
+               <h2 class="about__title">About</h2>
+               <p class="about__description">
+                  Hello there! I'm vamsip, a
+                  <strong>Frontend / Fullstack-Jamstack</strong> web developer based
+                  near Montreal. I wake up in the morning, grab a cup of timmies
+                  coffee, open up my laptop and build things that live on the web all
+                  day, everyday.
+               </p>
+               <p class="about__description">
+                  People who know me say I'm obsessed, that's fair, I am very driven
+                  and love learning new things.
+               </p>
+               <hr class="about__hr">
+               <h3 class="about__subtitle">Technologies</h3>
+               <div class="about__ui-container">
+                  <ul class="about__ul">
+                     <li class="about__list">JavaScript (ES6+)</li>
+                     <li class="about__list">CSS</li>
+                     <li class="about__list">HTML</li> 
+                  </ul>
+                  <ul class="about__ul">
+                     <li class="about__list">ReactJS</li>
+                     <li class="about__list">NextJS</li>
+                     <li class="about__list">TailwindCSS</li>
+                  </ul>
+               </div>
+            </div>
+            <div class="about__img-wrappwer">
+               <img class="about__img" src="/p1.jpeg" alt="Profile Picture">
+            </div>
+        </section>
+        <section id="featured" class="featured container section">
+            <h3 class="featured__subtitle"> Featured Project</h3>
+         <div class="featured__wrapper">
+            <h2 class="featured__title">Vamsi Polisetty Inovation</h2>
+            <a class="featured__link" href="">
+               <svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24" fill="currentColor"
+                >
+                  <path fill-rule="evenodd" d="M19.902 4.098a3.75 3.75 0 
+                     0 0-5.304 0l-4.5 4.5a3.75 3.75 0 0 0 1.035 6.037.75.75 0 0 1-.646 
+                     1.353 5.25 5.25 0 0 1-1.449-8.45l4.5-4.5a5.25 5.25 0 1 1 7.424
+                      7.424l-1.757 1.757a.75.75 0 1 1-1.06-1.06l1.757-1.757a3.75 3.75 
+                      0 0 0 0-5.304Zm-7.389 4.267a.75.75 0 0 1 1-.353 5.25 5.25 0
+                       0 1 1.449 8.45l-4.5 4.5a5.25 5.25 0 1 1-7.424-7.424l1.757-1.
+                       757a.75.75 0 1 1 1.06 1.06l-1.757 1.757a3.75 3.75 0 1 0 5.304 
+                       5.304l4.5-4.5a3.75 3.75 0 0 0-1.035-6.037.75.75 0 0 1-.354-1Z" 
+                       clip-rule="evenodd" />
+                </svg>
+                
+            </a>
+         </div>
+            <p class="featured__description">
+               Implementing a web project involves several steps, 
+               from planning and design to development, testing, and 
+               deployment. Here's a simplified overview of the process:
+               Project Planning and Requirements Gathering,Design Phase,etc
+             </p>
+            <div class="featured__info-container">
+             <div>
+                  <h3 class="featured__label">Tech stack</h3>
+                    <ul class="featured__tech-stack">
+                      <li class="featured__info">TailwindCSS</li>
+                      <li class="featured__info">React-JS</li>
+                      <li class="featured__info">React-hook-form</li>
+                      <li class="featured__info">NextJs</li>
+                      <li class="featured__info">Axios</li>
+                      <li class="featured__info">Superbase</li>
+                      <li class="featured__info">Stripe</li>
+                    </ul>
+             </div>
+             <div>
+               <h3 class="featured__label">Project Type</h3>
+               <p class="featured__info">Fullstack-jamstack</p>
+             </div>
+             <div>
+               <h3 class="featured__label">Timeline</h3>
+               <p class="featured__info">December 2024 - present</p>
+             </div>
+            </div>
+            <div class="featured__img-container">
+               <div class="featured__img-wrapper">
+                  <img src="/slayingthedragon.png" alt="Slaying The Dragon hero" />
+                  
+               </div>
+               <div class="featured__img-wrapper">
+                  <img src="/courses.png" alt="Slaying The Dragon courses" />
+                  
+               </div>
+               <div class="featured__img-wrapper">
+                  <img src="/pricing.png" alt="Slaying The Dragon pricing" />
+                  
+               </div>
+               <div class="featured__img-wrapper">
+                  <img src="/features.png" alt="Slaying The Dragon featured" />
+                  
+               </div>
+               <div class="featured__img-wrapper">
+                  <img src="/faq.png" alt="Slaying The Dragon faqs" />
+                  
+               </div>
+               <div class="featured__img-wrapper">
+                  <img src="/blog.png" alt="Slaying The Dragon blog" />
+                  
+               </div>
+               <div class="featured__img-wrapper">
+                  <img src="/signin.png" alt="Slaying The Dragon sign-in" />
+                  
+               </div>
+               <div class="featured__img-wrapper">
+                  <img src="/app.png" alt="Slaying The Dragon dashboard" />   
+               </div>
+            </div>
+        </section>
+        <section class="work container section">
+            <h2 class="work__title">Projects</h2>
+            <p class="work__description">
+               Front-end web development involves creating the user 
+               interface and user experience of a website or web application. 
+               Here are some common use cases and examples of front-end web projects:
+               Static Websites,Dynamic Web Applications,E-commerce Platforms,etc.
+            </p>
+          <div class="work__container">
+            <!-- First Project1 -->
+            <h3 class="work__project-title">Static Websites</h3>
+            <div class="work__img-wrapper work__image1">
+               <img  src="/waxmoney.png" alt="Wax motif website">
+            </div>
+            <div class="work__project work__content1">
+                  <h3 class="work__project-subtitle">Static Websites</h3>
+            <p class="work__project-description1">
+               Static websites are composed of HTML, CSS, and JavaScript files.
+               Use cases: Personal portfolios, landing pages, company websites.
+            </p>
+            <p class="work__project-description2">
+               Example: A portfolio website showcasing a designer's work,
+                built using HTML, CSS for styling, and JavaScript for interactivity 
+                such as image galleries or contact forms.
+            </p>
+            <a class=" btn work__project-btn " href="#">Website</a>
+            </div>
+            <!-- First Project2 -->
+            <h3 class="work__project-title">Dynamic Web Applications</h3>
+            <div class="work__img-wrapper work__image2">
+               <img  src="/drazeforce.png" alt="Draze Force website">
+            </div>
+            <div class="work__project work__content2">
+               <h3 class="work__project-subtitle">Dynamic Web Applications</h3>
+            <p class="work__project-description1">
+               Dynamic web applications use front-end frameworks or libraries like React, Angular, or Vue.js to create interactive user interfaces.
+               Use cases: Single-page applications (SPAs), web-based tools, social media platforms.
+            </p>
+            <p class="work__project-description2">
+               Example: A task management application where users can create, edit, 
+               and delete tasks in real-time without page refreshes, built using React 
+               for the front end and connecting to a back-end server for data storage and retrieval.
+            </p>
+            <a class=" btn work__project-btn " href="#">Website</a>    
+            </div>
+            <!-- First Project3 -->
+            <h3 class="work__project-title">E-commerce Platforms</h3>
+            <div class="work__img-wrapper work__image3">
+               <img  src="/artren.png" alt="Artern website">
+            </div>
+            <div class="work__project work__content3">
+               <h3 class="work__project-subtitle">E-commerce Platforms</h3>
+            <p class="work__project-description1">
+               E-commerce platforms require a dynamic front end to display products, handle user interactions, and process transactions.
+               Use cases: Online stores, marketplaces, booking platforms.
+            </p>
+            <p class="work__project-description2">
+               Example: An online bookstore where users can search for books, 
+               add them to their cart, and complete purchases securely, utilizing
+             a front-end framework like Angular or React to handle the user interface and interactions.
+            </p>
+            <a class=" btn work__project-btn " href="#">Website</a>
+            </div>
+          <!-- First Project4 -->
+          <h3 class="work__project-title"> Content Management Systems (CMS)</h3>
+          <div class="work__img-wrapper work__image4">
+             <img  src="/platformpro.png" alt="Platform Pro website">
+          </div>
+          <div class="work__project work__content4">
+            <h3 class="work__project-subtitle"> Content Management Systems (CMS)</h3>
+          <p class="work__project-description1">
+            CMS platforms allow users to create, manage, and publish digital content without requiring advanced technical skills.
+            Use cases: Blogs, news websites, forums.
+          </p>
+          <p class="work__project-description2">
+            Example: A blogging platform where users can create and publish articles, 
+            manage comments, and customize the appearance of their blog, built using a 
+            front-end framework like Vue.js and integrated with a back-end CMS like WordPress or Ghost.
+          </p>
+          <a class=" btn work__project-btn " href="#">Website</a>
+          </div>
+          <!-- First Project5 -->
+          <h3 class="work__project-title">Interactive Data Visualization</h3>
+          <div class="work__img-wrapper work__image5">
+             <img  src="/waxmoney.png" alt="Wallys Vegan website">
+          </div>
+          <div class="work__project work__content5">
+            <h3 class="work__project-subtitle">Interactive Data Visualization</h3>
+          <p class="work__project-description1">
+            Front-end technologies can be used to create interactive charts, graphs, and maps to visualize complex data sets.
+            Use cases: Dashboards, analytics platforms, educational tools.
+          </p>
+          <p class="work__project-description2">
+            Example: An interactive map displaying real-time weather data, 
+            allowing users to explore different regions and view detailed weather forecasts,
+             implemented using JavaScript libraries like D3.js or Chart.js for data visualization.
+          </p>
+          <a class=" btn work__project-btn " href="#">Website</a>
+          </div>
+         <!-- First Project6 -->
+         <h3 class="work__project-title">Portfolio</h3>
+         <div class="work__img-wrapper work__image6">
+            <img src="/portfolio.png" alt="Old Portfolio website">
+         </div>
+         <div class="work__project work__content6">
+            <h3 class="work__project-subtitle">Portfolio</h3>
+         <p class="work__project-description1">
+            Front-end technologies offer versatile capabilities to create interactive charts,
+             graphs, and maps for visualizing complex datasets. These visualizations 
+             find applications in diverse fields such as dashboards, analytics platforms, and educational tools.
+         </p>
+         <p class="work__project-description2">
+            Imagine developing an educational tool aimed at teaching geography and 
+            climate science to students. One exemplary project could be an interactive 
+            map displaying global climate data. Leveraging front-end technologies like HTML, 
+            CSS, and JavaScript, combined with libraries such as D3.js or Chart.js, the application
+             could provide an engaging way for students to explore climate patterns worldwide.
+         </p>
+         <a class=" btn work__project-btn " href="#">Website</a>
+         </div> 
+       </div>         
+        </section>
+        <section id="contack" class="contact container section">
+         <h2 class="contact__title">Get In Contact</h2>
+         <p class="contact__description">
+            Hi, I am polisetty vamsi. I am from muppavaram. If you need any 
+            full-stack development query let's contact me way a email.
+         </p>
+        <a class="contact__btn btn"
+            href="mailto:polisettyvamsi1010@gmal.com"
+            target="_blank" >Reach Out</a>
+        </section>
+    </main>
+    <footer>
+         <h4 class="footer__title">- - vamsi polisetty - -</h4>
+    </footer>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

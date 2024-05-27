@@ -1,0 +1,98 @@
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.contact__title {
+    font-size: var(--size-2xl);
+    color: var(--clr-light);
+    text-transform: capitalize;
+    margin-bottom: 0.5em;
+}
+.contact__description {
+        font-size: var(--size-sm);
+        color: var(--clr-slate600);
+        max-width: 60ch;
+        margin-bottom: 0.8em;
+}
+.contact__btn {
+    font-size: var(--size-base);
+    margin-bottom: 5rem;
+}
+  /* xs */
+
+    @media (min-width : 475px) {
+        .contact__title {
+            font-size: var(--size-3xl);
+        }
+        .contact__description {
+            font-size: var(--size-base);
+        }
+        .contact__btn {
+            font-size: var(--size-base);
+        }
+       
+    }
+    
+        /*   sm */
+    
+    /* @media (min-width : 600px) {
+      
+    } */
+    
+       /*   md */
+    
+    @media (min-width : 768px) {  
+        .contact__title {
+            font-size: var(--size-3xl);
+            margin-bottom: .80rem;
+        }
+        .contact__description {
+            font-size: var(--size-base);
+            margin-bottom: .80rem;
+        }
+        .contact__btn {
+            font-size: var(--size-base);
+        }
+    }
+    
+      /*   lg */
+    
+    @media (min-width : 1024px) {
+        .contact__title {
+            font-size: var(--size-4xl);
+            margin-bottom: 1rem;
+        }
+        .contact__description {
+            font-size: var(--size-lg);
+            margin-bottom: 1rem;
+        }
+        .contact__btn {
+            font-size: var(--size-lg);
+        }
+    }
+    
+     /*   x; */
+    
+    /* @media (min-width : 1280px) {
+      
+    
+    } */
+    
+     /*   2xl */
+    
+    @media (min-width : 1536px) {
+        .contact__title {
+            font-size: var(--size-5xl);
+        }
+        .contact__description {
+            font-size: var(--size-xl);
+        }
+        .contact__btn {
+            font-size: var(--size-xl);
+        }
+       
+    }
